@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	float x,p,c,r,z;
+	cin>>x>>p;
+	c=x;
+	while(1)
+	{
+	   r=(x*p)/100;
+	   z=x-r;
+	   int b=z;
+	   if(b==0)
+	   break;
+	   else{
+	   c=c+z;
+	   x=z;}
+	  }
+	 cout<<(int)c<<endl;
+	return 0;
+}
